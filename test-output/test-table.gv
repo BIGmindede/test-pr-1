@@ -1,0 +1,28 @@
+// Git_Graph
+digraph {
+	Second_commit [label=Second_commit]
+	"9fd3b6" [label="9fd3b6"]
+	Second_commit -> "9fd3b6"
+	new_txt_v1 [label=new_txt_v1]
+	"9fd3b6" -> new_txt_v1
+	test_txt_v1 [label=test_txt_v1]
+	"9fd3b6" -> test_txt_v1
+	First_commit [label=First_commit]
+	First_commit -> Second_commit
+	First_commit [label=First_commit]
+	"674d4d" [label="674d4d"]
+	First_commit -> "674d4d"
+	test_txt_v2 [label=test_txt_v2]
+	"674d4d" -> test_txt_v2
+	Third_commit [label=Third_commit]
+	"3d59ed" [label="3d59ed"]
+	Third_commit -> "3d59ed"
+	bak_v1 [label=bak_v1]
+	"3d59ed" -> bak_v1
+	new_txt_v2 [label=new_txt_v2]
+	"3d59ed" -> new_txt_v2
+	test_txt_v3 [label=test_txt_v3]
+	"3d59ed" -> test_txt_v3
+	Second_commit [label=Second_commit]
+	Second_commit -> Third_commit
+}
